@@ -27,7 +27,7 @@ def can_be_created_in_a_block(args=nil)
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
-if if args
+if args
      Movie.create(args)
    else
      Movie.create do |m|
@@ -35,7 +35,7 @@ if if args
        m.release_date = 1990
      end
    end
- end  
+ end
 
 def can_get_the_first_item_in_the_database
   __
